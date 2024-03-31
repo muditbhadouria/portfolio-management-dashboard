@@ -20,11 +20,36 @@ Interactive visualizations using Plotly to analyze the performance and diversifi
 
 An interactive web dashboard using Plotly Dash for a user-friendly analysis experience.
 
-## Usage
+## Running the Web Application
 
-The system requires Python with libraries such as Pandas, NumPy, SciPy, Plotly, and Dash. To run the web application, execute the following commands in your terminal -
-python -m venv venv
-.\myenv\Scripts\Activate.ps1 (for windows terminal)
-source venv/bin/activate (for MacOS / linux)
-pip install -R requirements.txt
-python app.py
+To run the web application, follow these steps in your terminal:
+
+1. **Create a Virtual Environment**:
+
+   ```
+   python -m venv venv
+   ```
+
+2. **Activate the Virtual Environment**:
+
+   - For Windows Terminal:
+     ```
+     .\venv\Scripts\Activate.ps1
+     ```
+   - For MacOS/Linux:
+     ```
+     source venv/bin/activate
+     ```
+
+3. **Install Required Packages**:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Application**:
+   ```
+   python app.py
+   ```
+
+Ensure to execute these commands in the root directory of your project where the `app.py` file is located. The `requirements.txt` file should list all the necessary Python packages needed for the web application.

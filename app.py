@@ -38,7 +38,6 @@ def create_comparison_df(portfolio_df, benchmark_df):
     returns_df_perc = returns_df_perc.round(2)
     returns_df_perc.rename(columns={0: 'Portfolio Returns',
                                     'Close': 'Benchmark Returns'}, inplace=True)
-    print(returns_df_perc)
     return returns_df_perc
 
 

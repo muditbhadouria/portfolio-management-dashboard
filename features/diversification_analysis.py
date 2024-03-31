@@ -25,7 +25,7 @@ def calculate_effective_number_of_assets(weights):
     return ena
 
 
-def plot_correlation_heatmap(returns, title='Asset Correlation Heatmap'):
+def plot_correlation_heatmap(returns, title='Asset Diversification Heatmap'):
     """ Plot a heatmap of asset correlations. """
     correlation_matrix = returns.corr()
     fig = go.Figure(data=go.Heatmap(
@@ -38,10 +38,4 @@ def plot_correlation_heatmap(returns, title='Asset Correlation Heatmap'):
     return fig
 
 
-portfolio_variance = calculate_portfolio_variance(
-    historical_returns, optimal_weights_mvo)
-diversification_ratio = calculate_diversification_ratio(
-    historical_returns, optimal_weights_mvo)
-effective_number_of_assets = calculate_effective_number_of_assets(
-    optimal_weights_mvo)
 correlation_heatmap = plot_correlation_heatmap(historical_returns)
